@@ -4,4 +4,4 @@ from v1.models import Weight
 class WeightSerializer(serializers.ModelSerializer):
     class Meta:
         model = Weight
-        fields = ['weight_value','record_date']
+        fields = ['owner','weight_value','record_date']
