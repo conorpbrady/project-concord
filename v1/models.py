@@ -21,7 +21,7 @@ class Lift(models.Model):
     lift_type = models.CharField(max_length = 32)
     completed_reps = models.IntegerField()
     attempted_reps = models.IntegerField()
-    weight = models.IntegerField()
+    lift_weight = models.DecimalField(decimal_places=2, max_digits=5, default=0)
 
     record_date = models.DateTimeField(default = timezone.now)
     owner = models.ForeignKey('auth.User', related_name = 'lift', on_delete=models.CASCADE, null=True)
