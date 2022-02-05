@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<table>
+	<tr>
+		<th>Date</th>
+		<th>Exercise Type</th>
+		<th>Length</th>
+		<th>Time</th>
+		<th>Description</th>
+	</tr>
+	{% for e in exercise %}
+	<tr>
+		<td>{{ e.record_date }}</td>
+		<td>{{ e.exercise_type }}</td>
+		<td>{{ e.length }}</td>
+		<td>{{ e.time }}</td>
+		<td>{{ e.description }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}

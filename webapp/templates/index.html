@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>I'm the main page</h2>
+<p>Here's a paragraph</p>
+<div class="container pt-1">
+		{% include 'listing.html' with listing=weight_listing %}
+</div>
+<div id="tester" style="width:600px;height:250px;">
+</div>
+
+{% endblock %}
+
