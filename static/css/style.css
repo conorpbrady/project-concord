@@ -1,51 +1,52 @@
-
-h2 {
-	color: purple;
+html {
+	height: 100%;
 }
 
-.green-bg {
-	background-color: green;
+body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 8% 5% auto 3%;
 }
 
-.main-light {
-	background-color: #669BBC;
+nav {
+	grid-row: 1 / 2;
 }
 
-.main-dark {
-	background-color: #003049;
-}
-
-.alt-light {
-	background-color: #C1121F;
-}
-
-.alt-dark {
-	background-color: #78000;
-}
-
-.bg-color {
-	background-color: #FDF0D5;
+header {
+	grid-row: 2 / 3;
 }
 
 
-.accent-1 { /* Terra Cotta*/
-	background-color: #E07A5F;
+main {
+	grid-row: 3 / 4;
+	padding: 1em;
+}
+
+footer {
+	grid-row: 4 / 5;
+	padding-left: 2em;
 }
 
 
-.accent-2 { /* Independence */ 
-	background-color: #3D405B;
+.accent-1 {
+	background-color: #2B6777;
 }
 
 
-.accent-3 { /* Green Sheen */
-	background-color: #81B29A;
+.accent-2 { 
+	background-color: #C8D8E4;
 }
 
-.off-white { /* Eggshell */
-	background-color: #F4F1DE;
+
+.accent-3 { 
+	background-color: #52AB98;
 }
 
-.accent-white { /* Deep Champagne */
-	background-color: #F2CC8F;
+.off-white { 
+	background-color: #FDFDFD;
 }
+
+.accent-white { 
+	background-color: #F2F2F2F2;
+}
+
