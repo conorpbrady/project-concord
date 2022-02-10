@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx:1.19.0
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+     - ~/conf/nginx.conf:/etc/nginx/conf.d/nginx.conf:ro
+     - /etc/letsencrypt:/etc/letsencrypt
+     - /var/lib/letsencrypt:/var/lib/letsencrypt
+     - /var/www/html:/var/www/html
+
